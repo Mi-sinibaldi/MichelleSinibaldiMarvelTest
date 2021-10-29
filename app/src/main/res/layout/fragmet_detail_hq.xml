@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="@dimen/size_width_photo_capa_detail"
+        android:layout_height="@dimen/size_height_photo_capa_detail"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homem_aranha" />
+
+    <ImageView
+        android:id="@+id/imageViewCapa"
+        android:layout_width="@dimen/size_width_photo_detail"
+        android:layout_height="@dimen/size_height_photo_detail"
+        android:layout_marginTop="@dimen/size_margim_photo_capa_detail"
+        android:paddingLeft="@dimen/size_XPP"
+        android:paddingTop="@dimen/size_XPP"
+        android:paddingRight="@dimen/size_XPP"
+        android:paddingBottom="@dimen/size_XPP"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spider_man" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_P"
+        android:layout_marginBottom="@dimen/size_PP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCapa">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewNameHQ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_P"
+                android:layout_marginLeft="@dimen/size_P"
+                android:layout_marginEnd="@dimen/size_P"
+                android:layout_marginRight="@dimen/size_P"
+                tools:text="Homem Aranha"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_G"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDescHQ"
+                android:layout_width="377dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/size_P"
+                android:layout_marginLeft="@dimen/size_P"
+                android:layout_marginTop="@dimen/size_P"
+                android:layout_marginEnd="@dimen/size_P"
+                android:layout_marginRight="@dimen/size_P"
+                android:gravity="left"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_M"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameHQ" />
+
+            <TextView
+                android:id="@+id/textViewPubli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_P"
+                android:layout_marginTop="@dimen/size_M"
+                android:text="Publicado:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_P"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescHQ" />
+
+            <TextView
+                android:id="@+id/textViewPubliItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_PP"
+                android:layout_marginTop="@dimen/size_M"
+                android:layout_marginEnd="@dimen/size_P"
+                tools:text="2019"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_P"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewPubli"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescHQ" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_P"
+                android:layout_marginTop="@dimen/size_PP"
+                android:text="Preço:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_P"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPubli" />
+
+            <TextView
+                android:id="@+id/textViewPriceItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_PP"
+                android:layout_marginTop="@dimen/size_PP"
+                android:layout_marginEnd="@dimen/size_P"
+                tools:text="R$ 35,00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_P"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewPrice"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPubliItem" />
+
+            <TextView
+                android:id="@+id/textViewPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_P"
+                android:layout_marginTop="@dimen/size_PP"
+                android:text="Páginas:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_P"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+
+            <TextView
+                android:id="@+id/textViewPagesItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_PP"
+                android:layout_marginTop="@dimen/size_PP"
+                android:layout_marginEnd="@dimen/size_P"
+                tools:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_typo_P"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewPages"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPriceItem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewArrowBack"
+        android:layout_width="@dimen/size_M"
+        android:layout_height="@dimen/size_M"
+        android:layout_marginStart="@dimen/size_M"
+        android:layout_marginTop="@dimen/size_M"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

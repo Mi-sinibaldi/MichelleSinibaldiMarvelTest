@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_XPP">6dp</dimen>
+    <dimen name="size_PP">8dp</dimen>
+    <dimen name="size_P">16dp</dimen>
+    <dimen name="size_M">24dp</dimen>
+    <dimen name="size_width_photo_capa_detail">413dp</dimen>
+    <dimen name="size_height_photo_capa_detail">212dp</dimen>
+    <dimen name="size_height_photo_detail">171dp</dimen>
+    <dimen name="size_width_photo_detail">120dp</dimen>
+    <dimen name="size_margim_photo_capa_detail">80dp</dimen>
+    <dimen name="size_height_photo_item">220dp</dimen>
+
+    //typography
+    <dimen name="size_typo_P">18sp</dimen>
+    <dimen name="size_typo_M">20sp</dimen>
+    <dimen name="size_typo_G">24sp</dimen>
+</resources>
